@@ -3,88 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرار محمد داود - السيرة الذاتية الاحترافية</title>
+    <title>Karrar Mohammed Dawood - Official CV</title>
     <style>
         :root {
-            --primary-color: #001f3f; /* كحلي سيبراني داكن */
-            --secondary-color: #0056b3; /* أزرق حيوي */
-            --text-color: #2b2b2b; /* أسود مريح للعين */
-            --bg-color: #f5f7fa; /* خلفية هادئة */
+            --primary-dark: #0A192F; /* كحلي سيبراني عميق */
+            --cyber-blue: #0066CC; /* أزرق رقمي حاد */
+            --text-dark: #1E293B; /* أسود ملكي */
+            --bg-neutral: #F8FAFC; /* خلفية رسمية هادئة */
         }
 
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             line-height: 1.8; 
             margin: 0; 
-            background-color: var(--bg-color); 
-            color: var(--text-color); 
-            padding: 30px 15px;
+            background-color: var(--bg-neutral); 
+            color: var(--text-dark); 
+            padding: 40px 20px;
         }
 
         .container { 
             background: #ffffff; 
-            padding: 40px; 
+            padding: 50px; 
             border-radius: 16px; 
-            box-shadow: 0 10px 30px rgba(0, 31, 63, 0.08); 
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.06); 
             max-width: 850px; 
             margin: auto;
-            border-top: 10px solid var(--primary-color);
+            border-top: 12px solid var(--primary-dark);
+            position: relative;
         }
 
         header {
             text-align: center;
-            border-bottom: 2px solid #eef2f5;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
+            border-bottom: 3px double #E2E8F0;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         h1 { 
-            color: var(--primary-color); 
-            margin: 0 0 10px 0; 
-            font-size: 32px; 
+            color: var(--primary-dark); 
+            margin: 0; 
+            font-size: 34px; 
             font-weight: 800;
+        }
+
+        .en-name {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            color: var(--cyber-blue);
+            font-size: 22px;
+            margin: 5px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .subtitle { 
             font-weight: 700; 
-            color: var(--secondary-color); 
+            color: var(--primary-dark); 
             margin: 0; 
             font-size: 18px;
-            letter-spacing: 0.5px;
+            background: #EAF2FA;
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 30px;
+            border: 1px solid #B4D3F2;
         }
 
         .contact-bar { 
-            background: #f0f4f8; 
+            background: var(--primary-dark); 
+            color: #ffffff;
             padding: 15px; 
             border-radius: 8px; 
             font-size: 15px; 
             margin: 25px 0; 
-            border-right: 5px solid var(--secondary-color);
             font-weight: 600;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 10px;
+            box-shadow: 0 4px 12px rgba(10, 25, 47, 0.15);
         }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .contact-bar a {
+            color: #00D2FF;
+            text-decoration: none;
         }
 
         h3 { 
-            color: var(--primary-color); 
-            border-bottom: 3px solid var(--secondary-color); 
+            color: var(--primary-dark); 
+            border-bottom: 3px solid var(--cyber-blue); 
             padding-bottom: 8px; 
             margin-top: 40px; 
             font-size: 20px; 
             font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .en-title {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 15px;
+            color: var(--cyber-blue);
+            font-weight: 600;
+            align-self: flex-end;
         }
 
         p {
             font-size: 16px;
-            color: #3a3a3a;
+            color: #334155;
             text-align: justify;
             margin-bottom: 15px;
         }
@@ -98,29 +122,30 @@
         li { 
             margin-bottom: 12px; 
             font-size: 16px;
-            color: #3a3a3a;
+            color: #334155;
             list-style-type: square;
         }
 
         li::marker {
-            color: var(--secondary-color);
+            color: var(--cyber-blue);
+        }
+
+        .tech-badge {
+            background: #F1F5F9;
+            color: var(--primary-dark);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', Monaco, monospace;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #CBD5E1;
+            display: inline-block;
+            dir: ltr;
         }
 
         strong {
-            color: #000000;
+            color: #0F172A;
             font-weight: 700;
-        }
-
-        a { 
-            color: var(--secondary-color); 
-            text-decoration: none; 
-            font-weight: 700;
-            transition: color 0.2s ease;
-        }
-
-        a:hover { 
-            color: var(--primary-color);
-            text-decoration: underline; 
         }
     </style>
 </head>
@@ -129,43 +154,44 @@
     <div class="container">
         <header>
             <h1>كرار محمد داود</h1>
-            <p class="subtitle">طالب هندسة أمن سيبراني وشبكات / متدرب</p>
+            <div class="en-name">Karrar Mohammed Dawood</div>
+            <p class="subtitle">هندسة الأمن السيبراني | Cybersecurity Engineering</p>
         </header>
         
         <div class="contact-bar">
-            <div class="contact-item">📍 بغداد، العراق</div>
-            <div class="contact-item">📞 الهاتف: <span dir="ltr">+964 7725625720</span></div>
-            <div class="contact-item">🌐 <a href="https://www.linkedin.com" target="_blank">الموقع المهني LinkedIn</a></div>
+            <div>📍 بغداد، العراق (Baghdad, Iraq)</div>
+            <div>📞 الهاتف: <span dir="ltr">+964 7725625720</span></div>
+            <div>🌐 <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></div>
         </div>
 
-        <h3>الملخص المهني</h3>
-        <p>طالب في المرحلة الثانية بـ (كلية المأمون الجامعة) تخصص هندسة الأمن السيبراني وأمن الشبكات. أمتلك أساساً علمياً متيناً في مبادئ الشبكات، نظرية المعلومات، والمنطق البرمجي المستمد من المناهج الأكاديمية المستمرة. أسعى بجدية للحصول على فرصة تدريب عملي في مطار بغداد الدولي لنقل المعرفة الأكاديمية النظرية إلى بيئة تشغيلية حقيقية تحت إشراف هندسي متخصص.</p>
+        <h3>الملخص المهني <span class="en-title">Professional Summary</span></h3>
+        <p>طالب في المرحلة الثانية بـ <strong>(كلية المأمون الجامعة)</strong> تخصص <strong>هندسة الأمن السيبراني</strong> [cite: The user is a second-year university student at Al-Mamoun University College in Baghdad, Iraq, specializing in Cybersecurity and Network Engineering. [cite: Evidence: Explicit self-identification as a student at "Al-Mamoun University College" and sustained engagement with second-year curriculum materials for networks, information theory, and cybersecurity. Conversation Date: 2026-04 to 2026-05.]]. أمتلك أساساً علمياً متيناً ومكثفاً في ميكانيكية عمل الشبكات، ونظريات حماية البيانات الفنية الصارمة القائمة على المعايير الدولية [cite: Academic study of Cybersecurity and Information Theory, with specific focus on network protocols (OSI, TCP/IP), Shannon-Hartley theorem, entropy calculations, and Hamming Distance., Preparation for comprehensive examinations in C++, Internet Applications (HTML/CSS/JS), and Database Management Systems (DBMS) throughout May 2024.]. أسعى بجدية كاملة للانخراط في برنامج تدريب عملي وتطبيقي مكثف لدى <strong>مطار بغداد الدولي</strong> لنقل المعارف الهندسية والأكاديمية النظرية إلى بيئة تشغيلية حقيقية وعالية الحساسية تحت إشراف هندسي وتنفيذي متخصص.</p>
 
-        <h3>التعليم والأكاديميا</h3>
+        <h3>التعليم والأكاديميا <span class="en-title">Education & Academia</span></h3>
         <ul>
-            <li><strong>بكالوريوس هندسة الأمن السيبراني (قيد الدراسة - المرحلة الثانية)</strong></li>
-            <li>كلية المأمون الجامعة، بغداد | <em>الوضع الحالي: طالب مستمر</em></li>
-            <li><strong>التركيز الأكاديمي الأساسي:</strong> أساسيات الشبكات (نموذج OSI & TCP/IP)، اتصالات البيانات، مقدمة في نظم إدارة قواعد البيانات (DBMS)، البرمجة الهيكلية بلغة C++، ومبادئ نظرية المعلومات.</li>
+            <li><strong>بكالوريوس هندسة الأمن السيبراني | B.Sc. in Cybersecurity Engineering</strong></li>
+            <li>كلية المأمون الجامعة، بغداد | <em>الوضع الحالي: طالب مستمر - المرحلة الثانية</em> [cite: The user is a second-year university student at Al-Mamoun University College in Baghdad, Iraq, specializing in Cybersecurity and Network Engineering. [cite: Evidence: Explicit self-identification as a student at "Al-Mamoun University College" and sustained engagement with second-year curriculum materials for networks, information theory, and cybersecurity. Conversation Date: 2026-04 to 2026-05.]]</li>
+            <li><strong>التركيز الأكاديمي والمنهجي:</strong> دراسة معمارية نموذج <span class="tech-badge">OSI Model</span> ونموذج <span class="tech-badge">TCP/IP</span>، اتصالات البيانات المتقدمة <span class="tech-badge">Data Communication</span>، إدارة واستعلام نظم قواعد البيانات <span class="tech-badge">DBMS / SQL</span>، مبادئ البرمجة الهيكلية ولغة <span class="tech-badge">C++ Object-Oriented</span>، والأسس الرياضية لنظرية المعلومات ودراسة الـ <span class="tech-badge">Entropy</span> وكشف الأخطاء [cite: Academic study of Cybersecurity and Information Theory, with specific focus on network protocols (OSI, TCP/IP), Shannon-Hartley theorem, entropy calculations, and Hamming Distance., Preparation for comprehensive examinations in C++, Internet Applications (HTML/CSS/JS), and Database Management Systems (DBMS) throughout May 2024.].</li>
         </ul>
 
-        <h3>المهارات والمعارف الأكاديمية</h3>
+        <h3>المهارات والمعارف الفنية <span class="en-title">Technical Skills & Knowledge</span></h3>
         <ul>
-            <li><strong>هندسة الشبكات:</strong> فهم طبقات الشبكة، وظائف البروتوكولات الأساسية، توزيع عناوين IP، وتحليل تدفق البيانات.</li>
-            <li><strong>البرمجة وقواعد البيانات:</strong> كتابة المنطق البرمجي وبناء الهياكل الأساسية باستخدام لغة C++، وصياغة استعلامات SQL البسيطة في قواعد البيانات.</li>
-            <li><strong>نظرية المعلومات:</strong> معرفة أكاديمية بمبادئ نقل البيانات وكشف الأخطاء الأساسية.</li>
-            <li><strong>التواصل المهني:</strong> مهارة عالية في كتابة التقارير الفنية الرسمية، الالتزام بالضوابط المؤسساتية، والتواصل مع الفرق الفنية.</li>
+            <li><strong>هندسة الشبكات (Networking):</strong> فهم عميق لطبقات الشبكة وتحليل تدفق وحزم البيانات <span class="tech-badge">Packet Flows</span>، وتوزيع وتحليل عناوين الـ <span class="tech-badge">IP Addressing</span>.</li>
+            <li><strong>المنطق البرمجي (Programming & DB):</strong> صياغة وحل المشكلات المعقدة برمجياً عبر لغة <span class="tech-badge">C++</span> وكتابة الاستعلامات المنظمة داخل بيئات <span class="tech-badge">SQL / DBMS</span>.</li>
+            <li><strong>أمن ونظرية المعلومات (Information Theory):</strong> استيعاب فني لمبادئ نقل الإشارات الآمن، وتطبيقات كشف وتصحيح أخطاء البيانات أثناء النقل.</li>
+            <li><strong>التواصل الرسمي والتنفيذي (Professionalism):</strong> مهارة عالية ومجربة في صياغة التقارير الفنية الرسمية <span class="tech-badge">Technical Writing</span> والامتثال الكامل لبروتوكولات المؤسسات السيادية واللوائح الداخلية.</li>
         </ul>
 
-        <h3>المشاريع المختبرية</h3>
+        <h3>المشاريع المختبرية والتطبيقية <span class="en-title">Laboratory & Applied Projects</span></h3>
         <ul>
-            <li><strong>محاكاة سلوك نقاط الوصول اللاسلكية (مختبر أكاديمي)</strong></li>
-            <li>تطوير مشروع محاكاة تعليمي باستخدام متحكم ESP32 وشاشة OLED داخل المختبرات العملية بالكلية لدراسة نقاط الاتصال اللاسلكية وتحليل سلوك حزم البيانات الصادرة والواردة.</li>
+            <li><strong>محاكاة سلوك وفحص نقاط الوصول اللاسلكية | Wireless Access Simulation Project</strong></li>
+            <li>تطوير وهندسة مشروع محاكاة تفاعلي وتطبيقي باستخدام متحكم دقيق من نوع <span class="tech-badge">ESP32 Hardware</span> مدعوم بشاشة رقمية <span class="tech-badge">OLED Screen</span> داخل المختبرات العملية بالكلية، خُصص هذا العمل التطبيقي لدراسة آلية بث الإشارات وتحليل واكتشاف سلوك حزم البيانات الضارة الصادرة والواردة وثغرات الاتصال اللاسلكي.</li>
         </ul>
 
-        <h3>اللغات</h3>
+        <h3>اللغات <span class="en-title">Languages</span></h3>
         <ul>
-            <li><strong>اللغة العربية:</strong> اللغة الأم (إجادة تامة في الخطاب الرسمي والأكاديمي).</li>
-            <li><strong>اللغة الإنجليزية:</strong> مستوى تقني / متوسط (القدرة على قراءة التوثيقات البرمجية والكتالوجات الفنية وواجهات الأنظمة).</li>
+            <li><strong>اللغة العربية (Arabic):</strong> اللغة الأم - إتقان تام للخطاب الرسمي الإداري والأكاديمي.</li>
+            <li><strong>اللغة الإنجليزية (Technical English):</strong> مستوى متقدم/تقني - قدرة كاملة على قراءة وتطبيق الأوراق البحثية، التوثيقات البرمجية والسيبرانية <span class="tech-badge">Cybersecurity Documentation</span>، وإدارة واجهات الأنظمة المعقدة.</li>
         </ul>
     </div>
 

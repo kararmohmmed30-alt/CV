@@ -3,38 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كرار محمد داود - السيرة الذاتية</title>
+    <title>كرار محمد داود - السيرة الذاتية الاحترافية</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 20px; color: #333; max-width: 800px; margin: auto; background-color: #f9f9f9; padding: 10px; }
-        .container { background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #003366; margin-bottom: 5px; font-size: 24px; }
-        .subtitle { font-weight: bold; color: #555; margin-top: 0; font-size: 15px; }
-        h3 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 5px; margin-top: 25px; font-size: 17px; }
-        ul { padding-right: 20px; padding-left: 0; }
-        li { margin-bottom: 8px; }
-        a { color: #0066cc; text-decoration: none; }
-        .contact-bar { background: #f0f4f8; padding: 10px; border-radius: 4px; font-size: 14px; margin-bottom: 20px; }
+        :root {
+            --primary-color: #001f3f; /* كحلي سيبراني داكن */
+            --secondary-color: #0056b3; /* أزرق حيوي */
+            --text-color: #2b2b2b; /* أسود مريح للعين */
+            --bg-color: #f5f7fa; /* خلفية هادئة */
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            padding: 30px 15px;
+        }
+
+        .container { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0, 31, 63, 0.08); 
+            max-width: 850px; 
+            margin: auto;
+            border-top: 10px solid var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 { 
+            color: var(--primary-color); 
+            margin: 0 0 10px 0; 
+            font-size: 32px; 
+            font-weight: 800;
+        }
+
+        .subtitle { 
+            font-weight: 700; 
+            color: var(--secondary-color); 
+            margin: 0; 
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-bar { 
+            background: #f0f4f8; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-size: 15px; 
+            margin: 25px 0; 
+            border-right: 5px solid var(--secondary-color);
+            font-weight: 600;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        h3 { 
+            color: var(--primary-color); 
+            border-bottom: 3px solid var(--secondary-color); 
+            padding-bottom: 8px; 
+            margin-top: 40px; 
+            font-size: 20px; 
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            color: #3a3a3a;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        ul { 
+            padding-right: 20px; 
+            padding-left: 0; 
+            margin: 10px 0;
+        }
+
+        li { 
+            margin-bottom: 12px; 
+            font-size: 16px;
+            color: #3a3a3a;
+            list-style-type: square;
+        }
+
+        li::marker {
+            color: var(--secondary-color);
+        }
+
+        strong {
+            color: #000000;
+            font-weight: 700;
+        }
+
+        a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            font-weight: 700;
+            transition: color 0.2s ease;
+        }
+
+        a:hover { 
+            color: var(--primary-color);
+            text-decoration: underline; 
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>كرار محمد داود</h1>
-        <p class="subtitle">طالب هندسة أمن سيبراني وشبكات / متدرب</p>
+        <header>
+            <h1>كرار محمد داود</h1>
+            <p class="subtitle">طالب هندسة أمن سيبراني وشبكات / متدرب</p>
+        </header>
         
         <div class="contact-bar">
-            بغداد، العراق | الهاتف: <span dir="ltr">+964 7725625720</span> | 
-            <a href="https://www.linkedin.com" target="_blank">الملف الشخصي على LinkedIn</a>
+            <div class="contact-item">📍 بغداد، العراق</div>
+            <div class="contact-item">📞 الهاتف: <span dir="ltr">+964 7725625720</span></div>
+            <div class="contact-item">🌐 <a href="https://www.linkedin.com" target="_blank">الموقع المهني LinkedIn</a></div>
         </div>
 
         <h3>الملخص المهني</h3>
-        <p>طالب في المرحلة الثانية بـ (كلية المأمون الجامعة) تخصص هندسة الأمن السيبراني وأمن الشبكات [cite: The user is a second-year university student at Al-Mamoun University College in Baghdad, Iraq, specializing in Cybersecurity and Network Engineering. [cite: Evidence: Explicit self-identification as a student at "Al-Mamoun University College" and sustained engagement with second-year curriculum materials for networks, information theory, and cybersecurity. Conversation Date: 2026-04 to 2026-05.]]. أمتلك أساساً علمياً متيناً في مبادئ الشبكات، نظرية المعلومات، والمنطق البرمجي المستمد من المناهج الأكاديمية المستمرة [cite: Academic study of Cybersecurity and Information Theory, with specific focus on network protocols (OSI, TCP/IP), Shannon-Hartley theorem, entropy calculations, and Hamming Distance., Preparation for comprehensive examinations in C++, Internet Applications (HTML/CSS/JS), and Database Management Systems (DBMS) throughout May 2024.]. أسعى بجدية للحصول على فرصة تدريب عملي في مطار بغداد الدولي لنقل المعرفة الأكاديمية النظرية إلى بيئة تشغيلية حقيقية تحت إشراف هندسي متخصص.</p>
+        <p>طالب في المرحلة الثانية بـ (كلية المأمون الجامعة) تخصص هندسة الأمن السيبراني وأمن الشبكات. أمتلك أساساً علمياً متيناً في مبادئ الشبكات، نظرية المعلومات، والمنطق البرمجي المستمد من المناهج الأكاديمية المستمرة. أسعى بجدية للحصول على فرصة تدريب عملي في مطار بغداد الدولي لنقل المعرفة الأكاديمية النظرية إلى بيئة تشغيلية حقيقية تحت إشراف هندسي متخصص.</p>
 
         <h3>التعليم والأكاديميا</h3>
         <ul>
             <li><strong>بكالوريوس هندسة الأمن السيبراني (قيد الدراسة - المرحلة الثانية)</strong></li>
-            <li>كلية المأمون الجامعة، بغداد | <em>الوضع الحالي: طالب مستمر</em> [cite: The user is a second-year university student at Al-Mamoun University College in Baghdad, Iraq, specializing in Cybersecurity and Network Engineering. [cite: Evidence: Explicit self-identification as a student at "Al-Mamoun University College" and sustained engagement with second-year curriculum materials for networks, information theory, and cybersecurity. Conversation Date: 2026-04 to 2026-05.]]</li>
-            <li><strong>التركيز الأكاديمي الأساسي:</strong> أساسيات الشبكات (نموذج OSI & TCP/IP)، اتصالات البيانات، مقدمة في نظم إدارة قواعد البيانات (DBMS)، البرمجة الهيكلية بلغة C++، ومبادئ نظرية المعلومات [cite: Academic study of Cybersecurity and Information Theory, with specific focus on network protocols (OSI, TCP/IP), Shannon-Hartley theorem, entropy calculations, and Hamming Distance., Preparation for comprehensive examinations in C++, Internet Applications (HTML/CSS/JS), and Database Management Systems (DBMS) throughout May 2024.].</li>
+            <li>كلية المأمون الجامعة، بغداد | <em>الوضع الحالي: طالب مستمر</em></li>
+            <li><strong>التركيز الأكاديمي الأساسي:</strong> أساسيات الشبكات (نموذج OSI & TCP/IP)، اتصالات البيانات، مقدمة في نظم إدارة قواعد البيانات (DBMS)، البرمجة الهيكلية بلغة C++، ومبادئ نظرية المعلومات.</li>
         </ul>
 
         <h3>المهارات والمعارف الأكاديمية</h3>
@@ -54,10 +165,9 @@
         <h3>اللغات</h3>
         <ul>
             <li><strong>اللغة العربية:</strong> اللغة الأم (إجادة تامة في الخطاب الرسمي والأكاديمي).</li>
-            <li><strong>اللغة الإنجليزية:</strong> مستوى تقني / متوسط (القدرة على قراءة الكتالوجات الفنية، والتوثيقات البرمجية، وواجهات الأنظمة).</li>
+            <li><strong>اللغة الإنجليزية:</strong> مستوى تقني / متوسط (القدرة على قراءة التوثيقات البرمجية والكتالوجات الفنية وواجهات الأنظمة).</li>
         </ul>
     </div>
 
 </body>
-                                                                                        </html>
- 
+</html>
